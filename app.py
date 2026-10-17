@@ -31,7 +31,7 @@ async def chat(request: Request):
     try:
         client = Groq(api_key=api_key)
         completion = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="  model = "openai/gpt-oss-20b",
             messages=messages,
             temperature=0.7,
             max_tokens=1024
